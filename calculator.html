@@ -14,10 +14,15 @@ function fourth() {
 	var num = document.getElementById("n1");
 	num.value = Math.pow(num.value, 4);
 }
+function inverse() {  
+	var num = document.getElementById("n1"); 
+	 num.value = 1/num.value;
+}
 function sin() {  
 	var num = document.getElementById("n1"); 
 	 num.value = Math.sin(num.value, 3);
 }
+
 </script>
 </head>
 <body>
@@ -28,6 +33,7 @@ function sin() {
 		 <button onclick="sqr()"> x^2 </button>
 		 <button onclick="cube()"> x^3 </button>
 		 <button onclick="fourth()"> x^4 </button>
+		 <button onclick="sqr()"> 1/x </button>
 		 <button onclick="sin()"> Sin </button>  
 	</p>	
 </body>
