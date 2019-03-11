@@ -2,7 +2,6 @@
 <!DOCTYPE html><html><head>
 <title>Calculator</title><meta charset="utf-8">
 <script type="text/javascript">
-
 function sqr() {  
 	var num = document.getElementById("n1"); 
 	 num.value = Math.pow(num.value, 2);
@@ -19,6 +18,10 @@ function sin() {
 	var num = document.getElementById("n1"); 
 	 num.value = Math.sin(num.value, 3);
 }
+function inverse() {  
+	var num = document.getElementById("n1"); 
+	 num.value = 1/(num.value);
+}
 </script>
 </head>
 <body>
@@ -30,7 +33,8 @@ function sin() {
 		 <button onclick="cube()"> x^3 </button>
 		 <button onclick="fourth()"> x^4 </button>
 		 <button onclick="sin()"> Sin </button>  
-	</p>	
+	   	 <button onclick="inverse()"> 1/x </button>  
+	</p>
 </body>
 </html>
 =================================================
